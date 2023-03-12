@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="edit d-flex justify-content-end my-4 mx-4">
-            <a href="/profile/{{ $profile->id }}/edit" class="btn btn-primary px-5">Edit Profile</a>
+            <a href="/profile/{{ $profile->id }}/edit" class="btn btn-info btn-grad btn-grad:hover">Edit Profile</a>
         </div>
     </div>
 @endsection

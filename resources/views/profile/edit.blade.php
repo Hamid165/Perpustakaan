@@ -76,8 +76,8 @@
             @enderror
 
             <div class="button-save d-flex justify-content-end">
-                <a href="/profile" class="btn btn-danger mt-4 py-1 px-4">Batal</a>
-                <button type="submit"class="btn btn-primary mt-4 mx-2 px-5 py-1">Simpan</button>
+                <a href="/profile" class="btn btn-outline-danger mt-4 py-1 px-4">Batal</a>
+                <button type="submit"class="btn btn-outline-success mt-4 mx-2 px-5 py-1">Simpan</button>
     </form>
     </div>
     </div>

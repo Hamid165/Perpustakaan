@@ -24,7 +24,7 @@ of Simple CSS Waves-->
 <!--Content before waves-->
 <div class="inner-header flex">
     
-<h1>Perpustakaan</h1>
+<h1>My Library</h1>
 
 @yield('content')
 </div>

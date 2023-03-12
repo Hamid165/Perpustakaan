@@ -1,6 +1,6 @@
 @extends('layouts.master')
         <link href="{{asset('/img/logo.png')}}" rel="icon">
-<nav class="navbar navbar-expand-lg " style="background-color: #66347F;>
+<nav class="navbar navbar-expand-lg " style="background: linear-gradient(to left, #3f0081, #aab1e5);">
  
 
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,8 +17,8 @@
         Silahkan login atau daftar akun
       </span> --}}
  
-      <a href="/login" class=""style="color: aliceblue">Login</a>
-      <a href="/register" class="ml-3 mr-4" style="color: aliceblue">Daftar</a>
+      <a href="/login" class="btn btn--light "style="color: aliceblue">Login</a>
+      <a href="/register" class="ml-3 mr-4 btn btn--light" style="color: aliceblue">Daftar</a>
  
     </div>
  
@@ -50,9 +50,9 @@
                 <div class="col-auto my-2" style="width:18rem;">
                     <div class="card mx-2 my-2" style="min-height:28rem;">
                         @if ($item->gambar != null)
-                            <img class="card-img-top" style="max-height:180px;" src="{{ asset('/images/' . $item->gambar) }}">
+                            <img class="card-img-top" style="max-height:720px;" src="{{ asset('/images/' . $item->gambar) }}">
                         @else
-                            <img class="card-img-top" style="height:200px;" src="{{ asset('/images/noImage.jpg') }}">
+                            <img class="card-img-top" style="height:1280px;" src="{{ asset('/images/noImage.jpg') }}">
                         @endif
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="detai-buku">
@@ -100,7 +100,7 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <p>Are you sure you want to delete?</p>
+                                            <p>Yakin untuk menghapus?</p>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-outline-primary"

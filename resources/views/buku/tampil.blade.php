@@ -14,15 +14,15 @@
 
 @section('content')
     @if (Auth::user()->isAdmin == 1)
-        <a href="/buku/create" class="btn btn-outline-success mb-3">Tambah Buku</a>
+        <a href="/buku/create"  class="btn btn-outline-success mb-3">Tambah Buku</a>
     @endif
 
     <form class="navbar-search mb-3" action="/buku" method="GET">
         <div class="input-group">
             <input type="search" name="search" class="form-control bg-light border-1 small" placeholder="Cari Judul Buku"
-                aria-label="Search" aria-describedby="basic-addon2" style="border-color: #3f51b5;">
+                aria-label="Search" aria-describedby="basic-addon2" style="border-color: #743fb5;">
             <div class="input-group-append">
-                <button class="btn btn-primary" type="submit">
+                <button class="btn btn-success" type="submit">
                     <i class="fas fa-search fa-sm"></i>
                 </button>
             </div>
@@ -37,9 +37,9 @@
                 <div class="col-auto my-2" style="width:18rem;">
                     <div class="card mx-2 my-2" style="min-height:28rem;">
                         @if ($item->gambar != null)
-                            <img class="card-img-top" style="max-height:180px;" src="{{ asset('/images/' . $item->gambar) }}">
+                            <img class="card-img-top" style="max-height:720px;" src="{{ asset('/images/' . $item->gambar) }}">
                         @else
-                            <img class="card-img-top" style="height:200px;" src="{{ asset('/images/noImage.jpg') }}">
+                            <img class="card-img-top" style="height:1280px;" src="{{ asset('/images/noImage.jpg') }}">
                         @endif
                         <div class="card-body d-flex flex-column justify-content-between">
                             <div class="detai-buku">

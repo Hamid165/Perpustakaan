@@ -1,7 +1,7 @@
 @extends('layouts.welcome')
 
 @section('content')
-
+        <link rel="stylesheet" href="{{asset('/css/login.css') }}">
 <div class="container">
 @if (Route::has('login'))
     <div class="auth">
@@ -51,7 +51,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-4 offset-md-4">
-                                <button type="submit" class="btn btn-primary px-5">
+                                <button type="submit" class="btn btn-primary btn-grad:hover btn-grad px-5">
                                     {{ __('Login') }}
                                 </button>
                             </div>
@@ -68,3 +68,4 @@
 </div>
         @endif
 @endsection
+      

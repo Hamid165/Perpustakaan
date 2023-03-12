@@ -84,7 +84,7 @@ class AnggotaController extends Controller
             'users_id'=>$user->id,
         ]);
 
-        Alert::success('Success', 'Berhasil Menambah Anggota');
+        Alert::success('Success', 'Berhasil Menambahkan Anggota');
         return redirect('/anggota');
     }
 
