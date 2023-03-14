@@ -143,7 +143,17 @@ class AnggotaController extends Controller
         ]);
         $user = User::find($id);
         $profile = Profile::find($id);
-
+        // if ($request->has('photoProfile')) {
+        //     $path = 'images/photoProfile/';
+        //     $oldPhoto = $path . $profile->photoProfile;
+        //     if (file_exists($oldPhoto)) {
+        //         unlink($oldPhoto);
+        //     }
+        //     $namaGambar = time() . '.' . $request->photoProfile->extension();
+        //     $request->photoProfile->move(public_path('images/photoProfile'), $namaGambar);
+        //     $profile->photoProfile = $namaGambar;
+        //     $profile->save();
+        // }
         if($request->has('photoProfile')){
          $path='images/photoProifle';
 
